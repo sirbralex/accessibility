@@ -1,0 +1,36 @@
+def dependencyGroup(Closure closure) {
+    closure.delegate = dependencies
+    return closure
+}
+
+ext {
+    // Support library version
+    supportLibraryVersion = '26.1.0'
+
+    // Android annotations
+    depsAndroidAnnotations = dependencyGroup {
+        implementation "com.android.support:support-annotations:$supportLibraryVersion"
+    }
+
+    // Local jars
+    depsLocalJars = dependencyGroup {
+        implementation fileTree(include: ['*.jar'], dir: 'libs')
+    }
+
+    // AppCompat
+    depsAppCompat = dependencyGroup {
+        implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
+    }
+
+    // Tests
+    depsTests = dependencyGroup {
+        // JUnit
+        testImplementation "junit:junit:4.12"
+        // Test runner
+        androidTestImplementation "com.android.support.test:runner:1.0.1"
+        // Espresso
+        androidTestImplementation("com.android.support.test.espresso:espresso-core:2.2.2", {
+            exclude group: 'com.android.support', module: 'support-annotations'
+        })
+    }
+}

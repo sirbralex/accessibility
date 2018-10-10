@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Accessibility</string>
+
+    <!--StartFragment-->
+    <string name="start_speech">Speech</string>
+    <string name="start_figures">Figures</string>
+    <string name="start_grid">Grid</string>
+
+    <!--FiguresFragment-->
+    <string name="figures_circle">Circle</string>
+    <string name="figures_triangle">Triangle</string>
+    <string name="figures_square">Square</string>
+
+    <!--SpeechFragment-->
+    <string name="speech_speak_btn">Speak</string>
+    <string name="speech_lang_english">English</string>
+    <string name="speech_lang_french">French</string>
+    <string name="speech_lang_german">German</string>
+    <string name="speech_lang_italian">Italian</string>
+    <string name="speech_lang_russian">Russian</string>
+
+    <!--GridFragment-->
+    <string name="grid_size_9">3x3 (9)</string>
+    <string name="grid_size_16">4x4 (16)</string>
+    <string name="write_files_permission_rationale_light">App need access to files for image caching</string>
+    <string name="write_files_permission_rationale_hard">Access to files for image caching is not allowed.\nAdd permission in app settings</string>
+
+
+    <!--BaseRtPermissionsDelegate-->
+    <string name="common_rt_permissions_rationale_light_continue">Continue</string>
+    <string name="common_rt_permissions_rationale_light_cancel">Cancel</string>
+    <string name="common_rt_permissions_rationale_hard_continue">Settings</string>
+    <string name="common_rt_permissions_rationale_hard_cancel">Cancel</string>
+</resources>
